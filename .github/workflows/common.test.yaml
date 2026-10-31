@@ -1,17 +1,8 @@
 name: "common: Tests"
 
 on:
-  pull_request:
-    branches:
-      - '**'
-    tags-ignore:
-      - '**'
-    paths:
-      - 'charts/library/**'
-      - 'tests/**'
-      - '.github/workflows/common.test.yaml'
-      - '.github/ct-install.yaml'
-      - '.github/ct-lint.yaml'
+  # automatic triggers removed 2026-10-30 to stop burning hosted-runner minutes; run manually
+  workflow_dispatch:
 
 jobs:
   unit-and-lint:

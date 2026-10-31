@@ -1,14 +1,8 @@
 name: "General: Security Scan"
 
 on:
+  # automatic triggers removed 2026-10-30 to stop burning hosted-runner minutes; run manually
   workflow_dispatch:
-  push:
-    branches:
-    - master
-    paths:
-    - ".github/workflows/general.security-scan.yaml"
-  schedule:
-    - cron: "0 0 * * 0"
 
 
 jobs:

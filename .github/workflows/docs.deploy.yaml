@@ -1,13 +1,7 @@
 name: "Docs: Deploy"
 on:
+  # automatic triggers removed 2026-10-30 to stop burning hosted-runner minutes; run manually
   workflow_dispatch:
-  push:
-    branches:
-      - master
-    paths:
-      - 'docs/**'
-      - '.github/workflows/docs.deploy.yaml'
-      - 'mkdocs.yml'
 
 jobs:
   build:
